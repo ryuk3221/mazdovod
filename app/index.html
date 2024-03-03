@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo-box" href="#">
+            <img src="images/logo.svg" alt="">
+          </a>
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a href="#">Услуги и цены</a></li>
+              <li class="header__nav-item"><a href="#">Отзывы</a></li>
+              <li class="header__nav-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <button class="header__btn">записаться</button>
+          <div class="header__contacts">
+            <a class="header__phone" href="tel:88002226064">8 (800) 222-60-64</a>
+            <span>г. Москва, пр-т. Вернадского, 12Д</span>
+          </div>
+          <button class="header__burger">
+            <svg class="open" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="3" fill="#D9D9D9"/>
+              <path d="M8 11H24" stroke="#999999" stroke-linecap="round"/>
+              <path d="M8 16H24" stroke="#999999" stroke-linecap="round"/>
+              <path d="M8 21H24" stroke="#999999" stroke-linecap="round"/>
+            </svg>
+            
+          </button>
+        </div>
+      </div>
+
+      <div class="drawer-menu">
+        <div class="drawer-menu__content">
+          <div class="drawer-menu__top">
+            <button class="header__btn">записаться</button>
+            <button class="drawer-menu__close-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="3" fill="#D9D9D9"/>
+                <path d="M10.3428 21.6572L21.6565 10.3435" stroke="#999999" stroke-linecap="round"/>
+                <path d="M10.3428 10.3433L21.6565 21.657" stroke="#999999" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="drawer-menu__inner">
+            <nav class="drawer-menu__nav">
+              <ul class="drawer-menu__nav-list">
+                <li class="drawer-menu__nav-item"><a href="#">Услуги и цены</a></li>
+                <li class="drawer-menu__nav-item"><a href="#">Отзывы</a></li>
+                <li class="drawer-menu__nav-item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer__contacts">
+              <a class="footer__phone-link" href="tel:">+7 (495) 725-11-66</a>
+              <a class="footer__phone-link" href="tel:">+7 (495) 518-64-44</a>
+              <a class="footer__phone-link--one" href="tel:">8 (800) 222-60-64</a>
+              <div class="footer__adress">
+                <span class="city">МОСКВА</span>
+                <span class="street">пр-т. Вернадского, 12Д</span>
+              </div>
+              <div class="footer__social">
+                <a class="footer__social-link" href="#">
+                  <img src="images/tg.svg" alt="">
+                </a>
+                <a class="footer__social-link" href="#">
+                  <img src="images/youtube.svg" alt="">
+                </a>
+                <a class="footer__social-link" href="#">
+                  <img src="images/whats.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner" style="background-image: url(images/banner.jpg);">
+        <div class="banner--bg">
+          <img src="images/banner-svg.svg" alt="">
+        </div>
+        <div class="container">
+          <div class="banner__content">
+            <a class="banner__adress" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M24.0002 5.97338C21.8785 3.85164 19.0008 2.65967 16.0002 2.65967C12.9996 2.65967 10.122 3.85164 8.00023 5.97338C5.8785 8.09511 4.68652 10.9728 4.68652 13.9734C4.68652 16.974 5.8785 19.8516 8.00023 21.9734L15.0269 29.0134C15.1508 29.1383 15.2983 29.2375 15.4608 29.3052C15.6233 29.3729 15.7975 29.4078 15.9736 29.4078C16.1496 29.4078 16.3239 29.3729 16.4863 29.3052C16.6488 29.2375 16.7963 29.1383 16.9202 29.0134L24.0002 21.9067C26.1131 19.7938 27.3001 16.9281 27.3001 13.94C27.3001 10.952 26.1131 8.08628 24.0002 5.97338ZM22.0936 20L16.0002 26.12L9.9069 20C8.70309 18.7951 7.88353 17.2604 7.55182 15.5898C7.22012 13.9192 7.39115 12.1877 8.0433 10.6143C8.69546 9.04086 9.79945 7.69611 11.2157 6.75001C12.632 5.80392 14.297 5.29895 16.0002 5.29895C17.7035 5.29895 19.3684 5.80392 20.7847 6.75001C22.201 7.69611 23.305 9.04086 23.9572 10.6143C24.6093 12.1877 24.7803 13.9192 24.4486 15.5898C24.1169 17.2604 23.2974 18.7951 22.0936 20ZM12.0002 9.88004C10.9239 10.9597 10.3194 12.4221 10.3194 13.9467C10.3194 15.4713 10.9239 16.9337 12.0002 18.0134C12.7999 18.8144 13.8183 19.3615 14.9278 19.5859C16.0372 19.8103 17.1882 19.7022 18.2363 19.2749C19.2845 18.8477 20.1831 18.1204 20.8195 17.1844C21.4559 16.2483 21.8017 15.1452 21.8136 14.0134C21.8196 13.2576 21.674 12.5084 21.3854 11.8099C21.0969 11.1114 20.6712 10.4779 20.1336 9.94671C19.6051 9.40615 18.975 8.97543 18.2795 8.67933C17.5839 8.38323 16.8367 8.22761 16.0808 8.22141C15.3248 8.21522 14.5752 8.35857 13.8749 8.64323C13.1746 8.92788 12.5375 9.34822 12.0002 9.88004ZM18.2536 16.12C17.7483 16.633 17.0805 16.9546 16.3644 17.0297C15.6483 17.1048 14.9283 16.9289 14.3276 16.5319C13.7268 16.135 13.2826 15.5417 13.0709 14.8535C12.8592 14.1653 12.8931 13.4249 13.1668 12.7589C13.4406 12.0929 13.9372 11.5427 14.5717 11.2024C15.2062 10.862 15.9392 10.7526 16.6455 10.8929C17.3517 11.0331 17.9873 11.4144 18.4436 11.9714C18.8998 12.5284 19.1485 13.2267 19.1469 13.9467C19.1275 14.7697 18.7822 15.5514 18.1869 16.12H18.2536Z" fill="#AAAAAA"/>
+              </svg>
+              <span>г. Москва, пр-т. Вернадского, 12Д</span>
+            </a>
+            <div class="banner__title">Mazdovod.center</div>
+            <h1 class="banner__title-one">профессиональный ремонт и обслуживание Mazda2, 3, 5, 6,  CX-5, CX-7, CX-9 и другие модели</h1>
+            <button class="banner__btn">записаться</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services__title">НАШИ УСЛУГИ</div>
+          <div class="services__inner">
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="images/services-icon.svg" alt="">
+              <span>Техническое обслуживание</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices">
+        <div class="container">
+          <div class="prices--bg">
+            <img src="images/services-bg.svg" alt="">
+          </div>
+          <div class="prices__title">услуги и цены</div>
+          <div class="prices__inner">
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-title">Замена масла в двигателе и масляного фильтра</div>
+              <div class="prices__item-price">от 800 ₽</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo--bg">
+          <img src="images/promo--bg.svg" alt="">
+        </div>
+        <div class="promo__img">
+          <img src="images/promo-img.png" alt="">
+        </div>
+        <div class="promo__content">
+          <div class="promo__title">КОМПЛЕКСНАЯ ДИАГНОСТИКА БЕСЛПАТНО <span>Ваша выгода 3000 руб</span></div>
+          <p class="promo__text">
+            Акция действует не на все модели mazda, а только на 10 из 50-ти обслживаемых нашим сервисом. подробнее уточняйте у нашего менеджера
+          </p>
+          <a class="promo__link" href="#">подробнее</a>
+        </div>
+      </section>
+
+      <section class="remont">
+        <div class="container">
+          <div class="remont__title">Ремонт моделей mazda</div>
+          <div class="remont__inner">
+            <div class="remont__item">
+              <img src="images/remont/img1.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">CX-4</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img2.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">ATENZA</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img3.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">CX-4</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img4.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">CX-5</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img5.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">CX-7</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img6.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">CX-8</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img7.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">CX-9</p>
+            </div>
+            <div class="remont__item">
+              <img src="images/remont/img8.png" alt="" class="remont__item-img">
+              <p class="remont__item-text">RX-8</p>
+            </div>
+          </div>
+          <a class="remont__link" href="#">Показать еще</a>
+        </div>
+      </section>
+
+      <!--<section class="benefits">
+        <div class="container">
+          <div class="benefits__title">наши преимущества</div>
+          <div class="benefits__slider-container">
+            <div class="benefits__slider">
+              <div class="swiper-wrapper">
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img1.jpg" alt="">
+                  <div class="benefits__item-title">3D Развал-схождение</div>
+                  <p class="benefits__item-text">
+                    4-х стоечный подъёмник для развал-схождения
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img2.jpg" alt="">
+                  <div class="benefits__item-title">Склад</div>
+                  <p class="benefits__item-text">
+                    Собственный склад запчастей!
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img3.jpg" alt="">
+                  <div class="benefits__item-title">4 Поста</div>
+                  <p class="benefits__item-text">
+                    4 Ремонтных поста
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img3.jpg" alt="">
+                  <div class="benefits__item-title">Ремзона</div>
+                  <p class="benefits__item-text">
+                    Открытая ремзона
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img1.jpg" alt="">
+                  <div class="benefits__item-title">3D Развал-схождение</div>
+                  <p class="benefits__item-text">
+                    4-х стоечный подъёмник для развал-схождения
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img2.jpg" alt="">
+                  <div class="benefits__item-title">Склад</div>
+                  <p class="benefits__item-text">
+                    Собственный склад запчастей!
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img3.jpg" alt="">
+                  <div class="benefits__item-title">4 Поста</div>
+                  <p class="benefits__item-text">
+                    4 Ремонтных поста
+                  </p>
+                </div>
+                <div class="benefits__slider-item swiper-slide">
+                  <img src="images/benefits/img3.jpg" alt="">
+                  <div class="benefits__item-title">Ремзона</div>
+                  <p class="benefits__item-text">
+                    Открытая ремзона
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="benefits-slider-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <rect width="50" height="50" rx="25" fill="#4B97CF"/>
+                <path d="M24.282 15L34.5645 25.2825L24.282 35.5649" stroke="white" stroke-width="3"/>
+                <path d="M16.1643 25.2825H34.5645" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="benefits-slider-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <rect width="50" height="50" rx="25" fill="#4B97CF"/>
+                <path d="M24.282 15L34.5645 25.2825L24.282 35.5649" stroke="white" stroke-width="3"/>
+                <path d="M16.1643 25.2825H34.5645" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</div>
+          <div class="reviews__slider-container">
+            <div class="reviews__slider">
+              <div class="swiper-wrapper">
+                <div class="reviews__slider-item swiper-slide">
+
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="reviews-slider-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <rect width="50" height="50" rx="25" fill="#4B97CF"/>
+                <path d="M24.282 15L34.5645 25.2825L24.282 35.5649" stroke="white" stroke-width="3"/>
+                <path d="M16.1643 25.2825H34.5645" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="reviews-slider-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <rect width="50" height="50" rx="25" fill="#4B97CF"/>
+                <path d="M24.282 15L34.5645 25.2825L24.282 35.5649" stroke="white" stroke-width="3"/>
+                <path d="M16.1643 25.2825H34.5645" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <div class="team__inner">
+            <div class="team__item">
+              <img class="team__item-img" src="images/team-img.jpg" alt="">
+              <span class="team__item-title">Максим</span>
+              <span class="team__item-text">Мастер-приемщик</span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team-img.jpg" alt="">
+              <span class="team__item-title">Максим</span>
+              <span class="team__item-text">Мастер-приемщик</span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team-img.jpg" alt="">
+              <span class="team__item-title">Максим</span>
+              <span class="team__item-text">Мастер-приемщик</span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team-img.jpg" alt="">
+              <span class="team__item-title">Максим</span>
+              <span class="team__item-text">Мастер-приемщик</span>
+            </div>
+            <a class="team__link" href="#" >
+              <div class="team__link-title">наша команда</div>
+              <p class="team__link-text">
+                Наша команда собрана исключительно из профессионалов своего дела, которые работают на ваше благо.
+              </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <g opacity="0.2">
+                <path d="M3 22V3H22" stroke="#2A2A2A" stroke-width="5"/>
+                <path d="M20 20L3 3" stroke="#2A2A2A" stroke-width="5"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="gallery">
+        <div class="container">
+          <div class="gallery__rows">
+            <div class="gallery__row">
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img1.jpg" alt=""></a>
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img2.jpg" alt=""></a>
+            </div>
+            <div class="gallery__row">
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img3.jpg" alt=""></a>
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img4.jpg" alt=""></a>
+            </div>
+            <div class="gallery__row">
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img5.jpg" alt=""></a>
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img6.jpg" alt=""></a>
+            </div>
+            <div class="gallery__row">
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img7.jpg" alt=""></a>
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img8.jpg" alt=""></a>
+            </div>
+            <div class="gallery__row">
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img9.jpg" alt=""></a>
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img10.png" alt=""></a>
+              <a class="gallery__img-box" href="#" data-fancybox="gallery"><img src="images/gallery/img11.jpg" alt=""></a>
+            </div>
+          </div>
+          <a class="gallery__link" href="#">Показать еще</a>
+        </div>
+      </div>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__content-box">
+              <h2 class="about__title">О нашем сервисе</h2>
+              <p class="about__text">
+                Фирменный автосервис Мазда дает одно важное преимущество: он обеспечивает полный комплекс работ по ремонту и обслуживанию авто данной марки. Наш профессиональный сервис Мазда в первую очередь ценят за положительный имидж.
+              </p>
+              <p class="about__text">
+                На первом месте у нас качество, а не количество. Терять годами наработанный авторитет, оказывая сомнительные услуги? Ни за что. Мы будем рекомендовать только те услуги, которые нужны вашему автомобилю в данный момент.
+              </p>
+              <a class="about__link" href="#">Показать ещё</a>
+            </div>
+            <div class="about__img-box">
+              <img src="images/about-img.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <form class="form" action="#">
+        <div class="form__img-box">
+          <img src="images/form-img.jpg" alt="">
+        </div>
+        <div class="form__content">
+          <div class="form__title">ЗАПИСАТЬСЯ В ТЕХЦЕНТР</div>
+          <div class="form__input-box">
+            <input type="text" placeholder="ВАШЕ ИМЯ" name="name">
+            <input type="text" placeholder="ВАШ ТЕЛЕФОН" name="phone">
+          </div>
+          <div class="form__subtitle">Как с вами связаться?</div>
+          <div class="form__label-box">
+            <label class="form__label">
+              <input type="radio" name="form" checked>
+              <div class="form__radio">
+                <span></span>
+              </div>
+              <div class="form__label-text">Позвонить</div>
+            </label>
+            <label class="form__label">
+              <input type="radio" name="form">
+              <div class="form__radio">
+                <span></span>
+              </div>
+              <div class="form__label-text">TELEGRAM</div>
+            </label>
+            <label class="form__label">
+              <input type="radio" name="form">
+              <div class="form__radio">
+                <span></span>
+              </div>
+              <div class="form__label-text">WHATSAPP</div>
+            </label>
+          </div>
+          <textarea class="form__textarea" name="message" placeholder="ВАШ КОММЕНТАРИЙ"></textarea>
+          <div class="form__bot">
+            <button class="form__btn" type="submit">ЗАПИСАТЬСЯ К НАМ В ЦЕНТР</button>
+            <div class="form__bot-text">Оставляя заявку вы соглашаетесь 
+              <a href="#">с полтикой конфиденциальности</a>
+            </div>
+          </div>
+        </div> 
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer--bg">
+        <img src="images/footer-bg.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__text-box">
+            <a class="footer__logo" href="#">
+              <img src="images/footer-logo.svg" alt="">
+            </a>
+            <p class="footer__text">
+              MAZDOVOD - это крупный поставщик всех деталей, запчастей, и много другого для любой модели Mazda
+            </p>
+            <a class="footer__link" href="#">Основной наш сайт</a>
+            <div class="footer__copyright">Все права защищены © 2023 Автосервис Mazda</div>
+          </div>
+          <div class="footer__contacts">
+            <a class="footer__phone-link" href="tel:">+7 (495) 725-11-66</a>
+            <a class="footer__phone-link" href="tel:">+7 (495) 518-64-44</a>
+            <a class="footer__phone-link--one" href="tel:">8 (800) 222-60-64</a>
+            <div class="footer__adress">
+              <span class="city">МОСКВА</span>
+              <span class="street">пр-т. Вернадского, 12Д</span>
+            </div>
+            <div class="footer__social">
+              <a class="footer__social-link" href="#">
+                <img src="images/tg.svg" alt="">
+              </a>
+              <a class="footer__social-link" href="#">
+                <img src="images/youtube.svg" alt="">
+              </a>
+              <a class="footer__social-link" href="#">
+                <img src="images/whats.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>  
