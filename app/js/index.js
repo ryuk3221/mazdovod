@@ -1,9 +1,22 @@
 const benefitsSlider = new Swiper('.benefits__slider', {
-  slidesPerView: 4,
-  spaceBetween: 20,
+  
   navigation: {
     prevEl: '.benefits-slider-prev',
     nextEl: '.benefits-slider-next',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    }
   }
 });
 
@@ -13,6 +26,16 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   navigation: {
     prevEl: '.reviews-slider-prev',
     nextEl: '.reviews-slider-next',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   }
 });
 
@@ -27,3 +50,20 @@ const drawerMenuShow = () => {
 
 burgerOpen.onclick = drawerMenuShow;
 burgerClose.onclick = drawerMenuShow;
+
+
+function init() {
+  let map = new ymaps.Map('map', {
+    center: [55.686269069036435,37.51147249999994],
+    zoom: 10,
+  });
+
+  let placemark = new ymaps.Placemark([55.686269069036435,37.51147249999994], {}, {
+    iconLayout: 'default#image',
+    
+  });
+  
+  map.geoObjects.add(placemark);
+  
+};
+ymaps.ready(init);

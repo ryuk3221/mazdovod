@@ -12,6 +12,7 @@ body {
   line-height: 140%;
   color: $black;
   font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -683,7 +684,7 @@ img {
   }
 
   &__img-box {
-    max-width: 493px;
+    width: 493px;
     border-radius: 20px;
     overflow: hidden;
 
@@ -994,6 +995,11 @@ img {
     color: #fff;
     font-size: 16px;
   }
+}
+
+.map {
+  height: 550px;
+  width: 100%;
 }
 
 @import '_media';
